@@ -155,7 +155,7 @@ e essa mesmas estão com 10 conteudos 'captura'
 */
 
 //lição 6 -----------------------------------------------
-
+/*
 let pergunta = prompt('adivinhe o numero que estou pensando? está entre 1 a 10')
 
 const gerador = Math.round(Math.random() * 10)
@@ -167,7 +167,7 @@ while(Number(pergunta) != gerador) {
    tentativas++
 }
 alert('parabens voce advinhou em ' + tentativas + ' tentativas')
-
+*/
 /*EXPLICACÃO________________________
 começamos criando uma var com o nome de 'pergunta' pois ela é quem vai capturar o numero fornecido pelo 
 cliente.
@@ -195,3 +195,41 @@ e quando o a repetição finalmente se encaixar com o resultado gerado e eles sa
 rodado um alert parabenizando o cliente ao mesmo tempo que interpola com o 'let tentativas' para dizer quantas tentativas ele fez
 
 */
+
+//lição 6 -----------------------------------------------
+  let option;
+  let lista = []; 
+
+  while(option != 3) {
+    
+    option = Number(prompt(`
+    olá usuario! digite o numero da opção desejada
+ 
+    1. cadastrar um item na lista
+    2. mostrar itens cadastrados 
+    3. sair do programa
+   `)) 
+
+
+  if(option == 1) {
+    let capturaItem = prompt('digite o nome do item')
+    lista.push(capturaItem)
+  }
+
+  else if(option == 2) {
+
+    if(lista.length == 0) {
+      alert('nenhum item cadastrado')
+    } else {
+      alert(lista)
+    }
+    
+  }
+
+  else if(option == 3) {
+    alert('até a próxima! :)')
+  }
+
+  console.log(option, lista)
+  }
+
