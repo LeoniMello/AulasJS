@@ -197,42 +197,43 @@ rodado um alert parabenizando o cliente ao mesmo tempo que interpola com o 'let 
 */
 
 //lição 6 -----------------------------------------------
-  let option;
-  let lista = []; 
+/*  
+    let option;
+    let lista = []; 
 
-  while(option != 3) {
-    
-    option = Number(prompt(`
-    olá usuario! digite o numero da opção desejada
- 
-    1. cadastrar um item na lista
-    2. mostrar itens cadastrados 
-    3. sair do programa
-   `)) 
-
-
-  if(option == 1) {
-    let capturaItem = prompt('digite o nome do item')
-    lista.push(capturaItem)
-  }
-
-  else if(option == 2) {
-
-    if(lista.length == 0) {
-      alert('nenhum item cadastrado')
-    } else {
-      alert(lista)
-    }
-    
-  }
-
-  else if(option == 3) {
-    alert('até a próxima! :)')
-  }
+          while(option != 3) {
+              
+              option = Number(prompt(`
+              olá usuario! digite o numero da opção desejada
+          
+              1. cadastrar um item na lista
+              2. mostrar itens cadastrados 
+              3. sair do programa
+            `)) 
 
 
-  }
+            if(option == 1) {
+              let capturaItem = prompt('digite o nome do item')
+              lista.push(capturaItem)
+            }
 
+            else if(option == 2) {
+
+              if(lista.length == 0) {
+                alert('nenhum item cadastrado')
+              } else {
+                alert(lista)
+              }
+              
+            }
+
+            else if(option == 3) {
+              alert('até a próxima! :)')
+            }
+
+
+            }
+          */
 /*EXPLICACÃO________________________ 
 para este desafio começamos criando um let de com o nome 'option' que é oq vai guardar as informaçoes das opçes 1 2 e 3, e depois criamos um let com o nome lista que é oq vamos usar para guardar os dados e depois os exibir em lista
 
@@ -271,5 +272,48 @@ caso o numero digitado seja 2 entramos no seguinnte codigo
     com a mensagem nenhum item cadastrado, se não mostrar um 
     alert exibindo os dados inseridos no lista 
 
-    
+caso o numero digitado seja igual a 3 entao apenas exibimos um alert até a promixa
+e o while seja igual a 3, então logo fechara 
 */
+//PT2 SWITCH------------------------
+/* 
+let option;
+let lista = []; 
+
+
+while(option != 3) {
+    
+  option = Number(prompt(`
+  olá usuario! digite o numero da opção desejada
+
+  1. cadastrar um item na lista
+  2. mostrar itens cadastrados 
+  3. sair do programa
+ `)) 
+
+ switch(option) {
+    case 1:
+    //aqui vem o cod
+    let capturaItem = prompt('digite o nome do item')
+    lista.push(capturaItem)
+      break;
+
+    case 2:
+      if(lista.length == 0) {
+        alert('nenhum item cadastrado')
+      } else {
+        alert(lista)
+      }
+      break;
+
+    case 3:
+      alert('até a próxima! :)')
+      break;
+
+    default:  
+    alert('opção invalida, tente novamente')
+ }
+
+}
+*/
+
