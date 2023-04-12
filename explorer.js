@@ -230,6 +230,46 @@ rodado um alert parabenizando o cliente ao mesmo tempo que interpola com o 'let 
     alert('até a próxima! :)')
   }
 
-  console.log(option, lista)
+
   }
 
+/*EXPLICACÃO________________________ 
+para este desafio começamos criando um let de com o nome 'option' que é oq vai guardar as informaçoes das opçes 1 2 e 3, e depois criamos um let com o nome lista que é oq vamos usar para guardar os dados e depois os exibir em lista
+
+ao let lista vamos definir um array [] e ao let option vamos deixar vazio por enquanto para podermos reatribuir os valores deles depois 
+
+agora criamos o while com a seguinte condição : while (option != 3) {}  
+que significa, enquanto o option for diferente de 3, o while ira repetir o codigo
+
+agora começamos a criar o conteudo da aplicação dentro do while, começando por retribuir os valores 
+de option para: option = number(prompt()) 
+isso pq se botassemos o option dentro do while, o while não encontraria ele, porem se botassemos ele 
+inteiro de fora do while ao digitar um dos numeros, o numero ficaria fixo assim travando a aplicação
+,então criamos o option fora do while e depois botamos os valores dele dentro do while para toda vez que 
+a aplicação se repita, exiba o menu com as opçoes 
+
+nesse codigo o option captura o numero digitado e então transforma o seu tipo de dado de string para
+number e volta la no while para vereficar se o numero digitado é diferente de 3 
+caso não seja prosseguimos com o cod.
+
+e entramos em um if e else if para as 3 opções 
+
+caso o numero digitado seja igual a 1 
+ele criaria um let para capturar os dados, com o nome de captura item, 
+a baixo dele ja chamamos o array de nome 'lista' e definimos um 
+lista.push(capturaitem) 
+isso pq o .push vai inserindo os dados no array um por um 
+
+caso o numero digitado seja 2 entramos no seguinnte codigo
+    if(lista.length == 0) {
+      alert('nenhum item cadastrado')
+    } else {
+      alert(lista)
+    } 
+
+    que significa, se o lista for igual a 0 itens entao mostrar um alert
+    com a mensagem nenhum item cadastrado, se não mostrar um 
+    alert exibindo os dados inseridos no lista 
+
+    
+*/
