@@ -196,7 +196,7 @@ rodado um alert parabenizando o cliente ao mesmo tempo que interpola com o 'let 
 
 */
 
-//lição 6 -----------------------------------------------
+//lição 7 -----------------------------------------------
 /*  
     let option;
     let lista = []; 
@@ -276,7 +276,7 @@ caso o numero digitado seja igual a 3 entao apenas exibimos um alert até a prom
 e o while seja igual a 3, então logo fechara 
 */
 //PT2 SWITCH------------------------
-/* 
+/*
 let option;
 let lista = []; 
 
@@ -316,4 +316,123 @@ while(option != 3) {
 
 }
 */
+
+//lição 8 -----------------------------------------------
+/*
+ const pacientes = [
+  {
+    name: 'joao', 
+    age: 50,
+    Weight: 70, 
+    height: 1.77, 
+  },
+
+  {
+    name: 'Maria', 
+    age: 40,
+    Weight: 60, 
+    height: 1.70, 
+  },
+
+  {
+    name: 'Ana', 
+    age: 30,
+    Weight: 50, 
+    height: 1.60, 
+  },
+
+]
+
+let NomePacientes = []
+
+for(let contador = 0; contador < pacientes.length; contador++) {
+  NomePacientes[contador] = pacientes[contador].name
+}
+
+alert(NomePacientes)
+*/ 
+/*EXPLICACÃO----------------------- 
+começamos criando uma lista de pacientes com array, e detro dela criamos objetos com as propiedades
+de cada paciente como nome altura peso e idade 
+
+agora para criar uma lista com os nomes de todos os pacientes vamos fazer o seguinte 
+
+começamos criando uma let com o seguinte nome 'NomePacientes' essa let é quem vai receber a lista
+com os nomes dos pacientes 
+==========================
+agora criamos um for() {} com as seguintes condiçoes
+
+'let contador = 0;' --> começamos criando uma let com o nome de contador, pois ela ira contar o numero de 
+unidades, ele começara no numero zero ou seja zerado 
+
+'contador < pacientes.length;' --> agora criamos a segunda condição que é, enquanto o contador 
+for menor que o numero de objetos dentro da lista pacientes, repita o cod 
+
+'contador++' --> toda vez que o cod se repetir, adicione uma unidade ao contador
+=========================
+
+agora que definimos as condiçoes vamos para os cod {}
+
+'NomePacientes[contador]' --> aqui estamos dizendo que o numero de nomes sera o mesmo que o contador
+
+'= pacientes[contador].name' --> e aqui estamos dizendo para acessar o objeto dentro da lista pacientes
+que seja de mesma numeração que o contador, e desses objetos puxar o a propiedade name '.name' 
+
+assim o cod fica 
+'NomePacientes[contador] = pacientes[contador].name' --> o numero de unidades que havera na lista de nomes 
+de pacientes sera o mesmo numero que tera o contador, e será atribuido os seguintes valores para essa 
+lista de nomes de pacientes, ela sera igual aos objetos da lista pacientes e tera levara para si somente 
+a propiedade name dos objetos que estão dentro da lista pacientes 
+*/
+//FOR OF---------------------------
+/*
+const pacientes = [
+  {
+    name: 'joao', 
+    age: 50,
+    Weight: 70, 
+    height: 1.77, 
+  },
+
+  {
+    name: 'Maria', 
+    age: 40,
+    Weight: 60, 
+    height: 1.70, 
+  },
+
+  {
+    name: 'Ana', 
+    age: 30,
+    Weight: 50, 
+    height: 1.60, 
+  },
+
+]
+
+let NomePacientes = []
+
+for(pacienteUnico of pacientes) {
+  NomePacientes.push(pacienteUnico.name)
+}
+
+alert(NomePacientes)
+*/
+/*EXPLICACÃO________________________ 
+aqui vamos explicar somente a parte do for, a explicação completa está na primeira parte
+criamos o for() {} mas desta vez usamos o de maneira diferente, dizemos o seguinte 
+================
+for(pacienteUnico of pacientes) --> o pacienteunico é uma let que criamos dentro dele que recebe 
+objeto por objeto da lista pacientes
+================
+agora dentro do cod {}
+dizemos o seguinte 
+'  NomePacientes.push(pacienteUnico.name)' --> o nomePacientes recebera um push ou envio de dados do let
+PacienteUnico.name, ou ele acessara o objeto e a propiedade name dentro do objeto e dara um push desse 
+dado la para o let NomePacient, 
+
+para finalizar rodamos o NomePacientes que vai conter todos os nomes dos pacientes
+*/
+
+//lição 9 -----------------------------------------------
 
