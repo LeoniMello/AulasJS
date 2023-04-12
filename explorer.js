@@ -435,4 +435,114 @@ para finalizar rodamos o NomePacientes que vai conter todos os nomes dos pacient
 */
 
 //lição 9 -----------------------------------------------
+/*
+function Liquidificador(fruta1, fruta2) {
+   let suco = fruta1 + fruta2
+   return suco
+}
 
+let MeuSuco = Liquidificador('Maça','pera')
+alert(MeuSuco)
+*/
+/*
+const pacientes = [
+  {
+    name: 'joao', 
+    age: 50,
+    Weight: 70, 
+    height: 1.77, 
+  },
+
+  {
+    name: 'Maria', 
+    age: 40,
+    Weight: 60, 
+    height: 1.70, 
+  },
+
+  {
+    name: 'Ana', 
+    age: 30,
+    Weight: 50, 
+    height: 1.60, 
+  },
+
+]
+
+function IMC(Weight, height) {
+  return (Weight / (height ** 2)).toFixed(1)
+}
+
+function FraseXY(client) {
+    return `Paciente ${client.name} possui o IMC de ${IMC(client.Weight, client.height)}`
+ 
+}
+
+for (let pacient of pacientes) {
+ let MSGimc = FraseXY(pacient) 
+ alert(MSGimc)
+}
+*/
+/*EXPLICACÃO________________________ 
+FUNCTION==========================================================
+CRIAÇÃO***
+começaremos explicando function, primeiro criamos a função, e damos a ela o nome, no caso do exemplo
+acima o nome da function é 'liquidificador' abrimos os () e dentro deles vai os argumentos 
+que no caso são o fruta1 e o fruta2, agora ambas ja existem dentro do escopo {} 
+
+agora podemos usar elas dentro do escopo (elas so existem dentro do escopo e mais nenhum lugar) da function
+
+criamos uma let de nome suco que vai receber fruta1 + fruta2 e no final damos 'return suco' que no 
+caso vai retornar as informações para a function Liquidificador 
+
+EXECUÇÃO***
+agora nessa parte chamamos o liquidificador() e definimos a ele qual vai ser a fruta1 e a fruta2 que no caso ficaria: liquidificador('maça','pera')
+
+e para finalizar criamos uma var com o nome 'meusuco' que vai receber os dados enviados de suco para liquidificador 
+========================================================================
+EXPLICAÇÃO DO COD. 
+
+LISTA DE PACIENTES----------------------------------------------
+logo de cara foi criado um array com o nome pacientes, dentro dele ele recebeu objetos com as propiedades
+de cada paciente como name, age, weight e height 
+
+FUNÇÃO CALCULADORA DE IMC APENAS---------------------------------
+agora vamos criar a function que vai calcular o IMC apenas de cada paciente:
+  function IMC(Weight, height) {
+  return (Weight / (height ** 2)).toFixed(1)
+  }
+criamos com a function com o nome de IMC e damos os paremetroa de 'Weight' e 'height' 
+dentro das chaves{} definimos o seguinte codigo 
+retorne para mim o Weight dividido pelo height ao quadrado, as prioridades de calculo são primeiro
+o height ao quadrado (height ** 2) e depois dividimos o Weight pelo Height, botamos eles dentro de parentes
+() para que a conta seja feita e após isso definimos o .toFixed(1) para que apareca apenas 1 numero apos a virgula do resultado final   
+
+FUNÇÃO QUE CRIA A FRASE------------------------------------------
+agora vamos criar a function que vai retornar a frase 
+    function FraseXY(client) {
+    return `Paciente ${client.name} possui o IMC de ${IMC(client.Weight, client.height)}`
+    }
+aqui estamos criando uma function com o nome FraseXY e com o parametro chamado client, 
+ela quem ira criar a frase que se pede e o client existe apenas dentro da funçao, 
+dentro das chaves{ } definimos o seguinte cod:
+retorne para mim uma string em `` para interpolar 
+puxe o .name que está atribuido ao client e tambem chame a function que calcula o IMC e bote a Altura 
+e o peso do client dentro da function, de certo modo ela funciona apenas para calcular com os dados do client
+
+e agora para finalizar vamos para o for of com o seguinte cod
+  for (let pacient of pacientes) {
+  let MSGimc = FraseXY(pacient) 
+  alert(MSGimc)
+  }
+começamos criando o for que é uma estrutura de repetição e passamos os seguintes parametros() 
+criamos um let com o nome pacient e damos um 'of de pacientes, ou seja ele vai puxar um objeto 
+do pacientes a cada vez que o cod repetir, até que tenha puxado todos
+agora o pacient vai receber um dos objetos a cada ciclo 
+agora dentro do codigo criamos um let com o nome MSGimc que é para exibir o resultado final da msg de 
+imc, e dentro dessa let de nome MSGimc definimos que o 'client da function FraseXY sera o resultado 
+da let criada pelo for, 
+
+em resumo resumo puxamos um dos objeto do 'pacients' botamos ele na 'let paciente e botamos os dados
+da let pacient no Client do FraseXY, agora o loop vai fazer isso com todos os objetos disponiveis dentro 
+do pacientes e a cada rodada sera exibido um alert com o MSGimc que carrega o conteudo da function PraseXY que é a function que montou a frase
+*/
