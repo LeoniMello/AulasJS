@@ -546,3 +546,7 @@ em resumo resumo puxamos um dos objeto do 'pacients' botamos ele na 'let pacient
 da let pacient no Client do FraseXY, agora o loop vai fazer isso com todos os objetos disponiveis dentro 
 do pacientes e a cada rodada sera exibido um alert com o MSGimc que carrega o conteudo da function PraseXY que é a function que montou a frase
 */
+
+
+//DOM JAVASCRIPT======================================================================  
+
