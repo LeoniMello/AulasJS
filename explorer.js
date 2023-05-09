@@ -549,4 +549,15 @@ do pacientes e a cada rodada sera exibido um alert com o MSGimc que carrega o co
 
 
 //DOM JAVASCRIPT======================================================================  
+/*selecionando elementos 
+para selecionar elemtnos usamos normalmente o seguinte "document.getElementByld('nomeElemento')"
+porem podemos usar outros tipos como ->
+
+getElementByld
+getElementsByClassName
+getElementsByTagName
+querySelector
+QuerySelectorAll 
+
+*/
 
