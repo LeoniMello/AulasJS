@@ -553,11 +553,24 @@ do pacientes e a cada rodada sera exibido um alert com o MSGimc que carrega o co
 para selecionar elemtnos usamos normalmente o seguinte "document.getElementByld('nomeElemento')"
 porem podemos usar outros tipos como ->
 
-getElementByld
-getElementsByClassName
-getElementsByTagName
-querySelector
-QuerySelectorAll 
+getElementByld -> 'ID #'
+getElementsByClassName -> CLASS '.CLASSNAME'
+getElementsByTagName  -> tag 'h1'  
+querySelector -> pega igual css
+QuerySelectorAll -> pega todos em formato NODELIST
 
 */
 
+/* Manipulando Conteudos 
+aqui vamos aprender a manipular os conteudos:
+
+const element = document.querySelector('h1')
+
+element.TextContent = 'Reatribuindo texto'
+para mais consultar caderno de anotações!
+/*
+*/
+
+/*Manipulando Estilos e Classes
+
+*/
